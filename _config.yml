@@ -1,1 +1,55 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-slate.
+
+title: hack repo
+description: This blog contains write-ups of the things that I researched, learned, and wanted to share to others.
+author: Rootmeister
+
+about: Aspiring Exploit Researcher/Security Researcher.
+avatar_url: 
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/Cyberjokermania"
+    - icon: fa-github
+      link: "https://markchristiansecretario.github.io/Rootmeister/"
+
+share:
+  twitter_username: Cyberjokermania
+
+urls:
+    - text: Pen Test
+      url: /category/pentest
+    - text: Exploit Dev
+      url: /category/exploitdev
+    - text: Bug Bounty
+      url: /category/bugbouty
+    - text: Disclosures
+      url: /category/disclosures  
+    - text: About Me
+      url: /about/
+      
+url: "https://markchristiansecretario.github.io/Rootmeister/"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-auto-image
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
